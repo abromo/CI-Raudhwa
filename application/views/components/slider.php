@@ -1,6 +1,6 @@
 
 <div class="row" id="slider">
-    <div class="col-xs-12">
+    <div>
         <div class="row img-slider">
             <div class="container">
                 <div class="row">

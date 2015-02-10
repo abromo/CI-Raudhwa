@@ -27,10 +27,16 @@ body,html{
 .rau-social i{
     width:17px;
 }
+/*
 @media (min-width: 1200px){
     .col-lg-1-5 {
         width: 14.366667%;
     }
+}
+*/
+
+.row{
+	margin: 0 0 0 0;
 }
 .context{
 
@@ -335,14 +341,42 @@ a,i{
 
 }
 
+.container {
+	max-width: none !important;
+	width: 1161px;
+}
 /*Kwa ajili ya footer*/
-#footer
-{
+#wrapper{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -100px;
+}
+
+
+footer {
     /* width: 100%; */
-    display: block;
+    /*display: block;
     /*overflow: hidden;*/
-    background-color: #1d1c26;
-    height: 100px;
+    /*background-color: #1d1c26;*/
+    height: 200px;
+	/*position: absolute;*/
+	width: 100%;
+	z-index: 100000;
+	text-align: center;
+	color: #7b8184;
+	bottom: 0;
+	background: transparent url('../img/footer.png') repeat 0 0;
+	padding: 0 0 0 0;
+	border-top: 3px solid #000;
+}
+
+.disclaimer {
+	padding: 25px;
+	text-align: center;
+	color: #626161;
+	background: transparent url('../img/after_footer.png') repeat-x 0 0;
+
 }
 
 
