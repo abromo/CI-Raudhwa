@@ -29,7 +29,7 @@
 
                                     </article>
                                 </div>
-                                <p class="btn btn-success pull-left "><i class="fa fa-book"></i> Read More</p>
+                                <p class="btn btn-success pull-left "><i class="fa fa-book"></i> Soma Zaidi</p>
                                 <div class="article-actions pull-right">
 
                                     <span><i class="fa fa-comment-o"></i><strong>20</strong> Comments</span>
