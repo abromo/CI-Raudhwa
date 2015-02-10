@@ -414,8 +414,15 @@ footer {
 	color:white;
 }
 
-#footer-menu ul li:before{
-	content:'|';
+#footer-menu  ul li:after{
+	content: ' ';
+	
+	
+	font-weight: 500;
+	background-color: rgb(123, 129, 132);
+	
+	opacity: 0.2;
+	margin: 10px;
 }
 
 
