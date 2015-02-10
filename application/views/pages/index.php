@@ -19,7 +19,7 @@
                                 <p class="text-center"><?php echo date('M',strtotime($post['created_date']));?></p>
                             </div>
 
-                            <h3 class="article-title-----"><?php echo $post['title']?></h3>
+                            <h3 class="article-title-----"><?php echo ucwords(strtolower($post['title']));?></h3>
                             <div>
                                 <div class="article-details">
                                     <article>
