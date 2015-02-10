@@ -9,6 +9,7 @@
             <div class="row">
                 <div class="col-xs-8 articles">
                     <?php
+					
                     foreach($posts as $post){?>
                         <article id="23">
                             <div class="pull-right text-right" id="date">
@@ -22,7 +23,7 @@
                                 <div class="article-details">
                                     <article>
                                         <p>
-                                            <?php $this->posts->get_article_for_post($post['id']);?>
+                                            <?php echo $post['content'];?>
                                         </p>
 
                                     </article>
@@ -32,7 +33,7 @@
 
                                     <span><i class="fa fa-comment-o"></i><strong>20</strong> Comments</span>
                                     <span><i class="fa fa-share"></i><strong>23</strong> Shares</span>
-                                    <span><i class="fa fa-eye"></i><strong>78</strong> views</span>
+                                    <span><i class="fa fa-eye"></i><strong><?php echo $post['views']?></strong> views</span>
                                 </div>
                             </div>
                         </article>
