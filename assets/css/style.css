@@ -46,8 +46,12 @@ body,html{
 #context2{
 
 }
+.vuta{
+/*margin-top: -274px; */
+top:-274px;
+}
 .content-wrapper{
-    margin-top: -274px;
+    
     position: relative;
 }
 .content-title #title, .content-title #date{

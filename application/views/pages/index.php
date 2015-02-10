@@ -1,10 +1,11 @@
 
 <div id="content" class="container">
-    <div class="content-wrapper">
+    <div class="content-wrapper vuta">
         <div class="row content-title">
             <div class="pull-left" id="title"><span><?php echo strtoupper($title)?></span> <i class="text-danger fa fa-chevron-right"></i> <strong><span>QISWA CHA NABII</span></strong></div>
             <div class="pull-right text-right" id="date"><?php echo date('D, M d, Y');?> </div>
         </div><!-- END OF UPPERPART-->
+		
         <div class="row content-details">
             <div class="row">
                 <div class="col-xs-8 articles">
@@ -14,7 +15,7 @@
                         <article id="23">
                             <div class="pull-right text-right" id="date">
                                 <?php //echo "Fri 18 Feb, 2014";?>
-                                <h1 >28</h1>
+                                <h1 >10</h1>
                                 <p class="text-center">Feb</p>
                             </div>
 
@@ -79,7 +80,7 @@
                     </article>
                 </div>
             </div>
-            <div class="row"></div>
+            
 
 
         </div><!-- END OF LOWERPART-->
