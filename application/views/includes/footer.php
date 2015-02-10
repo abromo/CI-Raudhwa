@@ -1,6 +1,6 @@
 </div> <!-- WRAPPER -->
 
-<footer id="footer">
+<footer id="footer" class="content-bug">
 <div class="container" id='footer-top-credit'>
 	<img class="img-responsive" src="<?php echo base_url().'assets/img/logo.png';?>"/>
 	<p class="text-left">Raudhwa Islamic Foundation 2015</p>

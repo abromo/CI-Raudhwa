@@ -1,5 +1,5 @@
 
-<div id="content" class="container">
+<div id="content" class="container content-bug">
     <div class="content-wrapper vuta">
         <div class="row content-title">
             <div class="pull-left" id="title"><span><?php echo strtoupper($title)?></span> <i class="text-danger fa fa-chevron-right"></i> <strong><span>QISWA CHA NABII</span></strong></div>
@@ -12,7 +12,7 @@
                     <?php
 					
                     foreach($posts as $post){?>
-                        <article id="23">
+                        <article id="<?php echo $post['post_id']?>-changua">
                             <div class="pull-right text-right" id="date">
                                 
                                 <h1 ><?php echo date('d',strtotime($post['created_date']));?></h1>
