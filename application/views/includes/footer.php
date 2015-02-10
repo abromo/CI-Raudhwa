@@ -3,12 +3,16 @@
 <footer id="footer">
 <div class="container" id='footer-top-credit'>
 	<img class="img-responsive" src="<?php echo base_url().'assets/img/logo.png';?>"/>
-	<p class="text-left">Raudhwa Islamic Foundation</p>
+	<p class="text-left">Raudhwa Islamic Foundation 2015</p>
 	</div>
 	
 	<div class="disclaimer">
 		<div class="container" id="footer-menu">
-		Fiqh | Sira
+			<ul>
+				<li><a>Fiqh</a></li>
+				<li><a>Sira</a></li>
+				<li><a>Fatwa</a></li>
+			</ul> 
 		</div>
 	</div>
 	
