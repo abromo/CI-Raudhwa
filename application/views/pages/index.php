@@ -14,9 +14,9 @@
                     foreach($posts as $post){?>
                         <article id="23">
                             <div class="pull-right text-right" id="date">
-                                <?php //echo "Fri 18 Feb, 2014";?>
-                                <h1 >10</h1>
-                                <p class="text-center">Feb</p>
+                                
+                                <h1 ><?php echo date('d',strtotime($post['created_date']));?></h1>
+                                <p class="text-center"><?php echo date('M',strtotime($post['created_date']));?></p>
                             </div>
 
                             <h3 class="article-title-----"><?php echo $post['title']?></h3>
