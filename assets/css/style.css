@@ -345,12 +345,13 @@ a,i{
 	max-width: none !important;
 	width: 1161px;
 }
+
 /*Kwa ajili ya footer*/
 #wrapper{
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -100px;
+	margin: 0 auto -80px;
 }
 
 
@@ -359,24 +360,39 @@ footer {
     /*display: block;
     /*overflow: hidden;*/
     /*background-color: #1d1c26;*/
-    height: 200px;
+    height: 80px;
 	/*position: absolute;*/
 	width: 100%;
 	z-index: 100000;
-	text-align: center;
+	
 	color: #7b8184;
 	bottom: 0;
 	background: transparent url('../img/footer.png') repeat 0 0;
 	padding: 0 0 0 0;
 	border-top: 3px solid #000;
 }
+#footer-top-credit{
+}
 
+#footer-top-credit p {
+	padding-left: 120px;
+	padding-top: 8px;
+	padding-bottom: 0px;
+}
+
+#footer-top-credit img{
+	position: absolute;margin-top: -51px;padding-left: 32px;width:111px
+}
 .disclaimer {
-	padding: 25px;
-	text-align: center;
+	padding: 10px;
+	
 	color: #626161;
 	background: transparent url('../img/after_footer.png') repeat-x 0 0;
 
+}
+
+#footer-menu{
+	padding-left:136px;
 }
 
 
