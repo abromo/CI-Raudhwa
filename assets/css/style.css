@@ -5,6 +5,18 @@ body,html{
     /*position: relative;*/
 }
 
+.btn-rau {
+	color: #fff;
+	background-color: #78940B;
+	border-color: #85B200;
+}
+
+.btn-rau:hover, .btn-rau:focus, .btn-rau:active, .btn-rau.active, .open .dropdown-toggle.btn-rau {
+color: #fff;
+background-color: #475B01;
+border-color: #85B200;
+}
+
 /*  MENU    */
 .bg-start{
     box-sizing: border-box;
