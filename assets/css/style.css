@@ -135,9 +135,8 @@ top:-274px;
 }
 
 .bg-color{
-    background-color: #273C50;
-    height: 121px;
-
+    background: transparent url('../img/footer.png') repeat 0 0;
+    border-bottom: 4px solid #739208;
 }
 
 #logo{
