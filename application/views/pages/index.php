@@ -8,7 +8,7 @@
 		
         <div class="row content-details">
             <div class="row">
-                <div class="col-xs-8 articles">
+                <div class="col-xs-9 articles">
                     <?php
 					
                     foreach($posts as $post){?>
@@ -42,7 +42,7 @@
                         <div class="article-separator"></div>
                     <?php } ?>
                 </div>
-                <div class="col-xs-4 random-articles">
+                <div class="col-xs-3 random-articles">
                     <h3>Random Articles</h3>
                     <article>
                         <ul class="random-lists">
