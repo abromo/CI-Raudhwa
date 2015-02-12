@@ -12,34 +12,35 @@
         <div class="bg-color">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-4" id="logo">
-                        <img src="<?php echo base_url()?>assets/img/logo.png" alt=""/><span class="brand">Raudhwa</span>
+                    <div id="logo">
+                        <img src="<?php echo base_url()?>assets/img/logo.png" alt=""/><span class="brand" style="line-height: 0">Raudhwa</span>
                     </div>
-                    <div class="col-xs-8">
-                        <div class="row">
-                            <div class="pull-right">
-                                <span class="rau-social btn-facebook"><i class="fa fa-facebook"></i></span>
-                                <span class="rau-social btn-twitter"><i class="fa fa-twitter"></i></span>
-                                    <span style="color:white;" class=""><i class="fa fa-lock"></i>
-                                       
-                                    </span>
-                            </div>
-                        </div>
-                        <div class="row row-fix">
-                            <div class="pull-right">
-                                <div class="row">
-                                    <ul id="menu-list">
-                                        <li class="<?php echo (isset($active) and $active and $active=='index')?'active_menu':'';?>"><a href="">Mwanzo</a></li>
-                                        <li class="<?php echo (isset($active) and $active and $active=='fatwa')?'active_menu':'';?>" ><a href="">Fatwa</a></li>
-                                        <li class="<?php echo (isset($active) and $active and $active=='fiqhi')?'active_menu':'';?>"><a href="">Fiqhi</a></li>
-                                        <li class="<?php echo (isset($active) and $active and $active=='audio')?'active_menu':'';?>"><a href="">Audio</a></li>
-                                    </ul>
-                                    <div id="menu-line"><div></div></div>
-                                </div>
-                            </div>
-                        </div>
+                    <div id='cssmenu'>
+                        <ul>
+                            <li><a href='#'><span>Home</span></a></li>
+                            <li class='active has-sub'><a href='#'><span>Products</span></a>
+                                <ul>
+                                    <li class='has-sub'><a href='#'><span>Product 1</span></a>
+                                        <ul>
+                                            <li><a href='#'><span>Sub Product</span></a></li>
+                                            <li class='last'><a href='#'><span>Sub Product</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class='has-sub'><a href='#'><span>Product 2</span></a>
+                                        <ul>
+                                            <li><a href='#'><span>Sub Product</span></a></li>
+                                            <li class='last'><a href='#'><span>Sub Product</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href='#'><span>About</span></a></li>
+                            <li class='last'><a href='#'><span>Contact</span></a></li>
+                        </ul>
                     </div>
                 </div>
+
+
             </div>
         </div>
     </div>
