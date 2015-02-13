@@ -9,6 +9,7 @@
     <link  href="<?php echo base_url()?>assets/css/bootstrap-social.css" rel="stylesheet" type="text/css">
     <link  href="<?php echo base_url()?>assets/css/rau-menu.css" rel="stylesheet" type="text/css">
     <link  href="<?php echo base_url()?>assets/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="Shortcut Icon" type="image/png" href="<?php echo base_url();?>assets/img/icon.png" />
 
 </head>
 
