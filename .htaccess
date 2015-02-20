@@ -1,0 +1,104 @@
+#<IfModule mod_rewrite.c>
+#
+#	# Make sure directory listing is disabled
+#	Options +FollowSymLinks -Indexes
+#	RewriteEngine on
+#
+#	#Removes access to the system folder by users.
+#    #Additionally this will allow you to create a System.php controller,
+#    #previously this would not have been possible.
+#    #'system' can be replaced if you have renamed your system folder.
+#    RewriteCond %{REQUEST_URI} ^system.*
+#    RewriteRule ^(.*)$ /index.php?/$1 [L]
+#
+#    #fanya tena na application
+#    #'system' can be replaced if you have renamed your system folder.
+#    RewriteCond %{REQUEST_URI} ^application.*
+#    RewriteRule ^(.*)$ /index.php?/$1 [L]
+#
+#	#Checks to see if the user is attempting to access a valid file,
+#    #such as an image or css document, if this isn't true it sends the
+#    #request to index.php
+#    RewriteCond %{REQUEST_FILENAME} !-f
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteRule ^(.*)$ index.php?/$1 [L]
+#</IfModule>
+#
+#<IfModule !mod_rewrite.c>
+#    # If we don't have mod_rewrite installed, all 404's
+#    # can be sent to index.php, and everything works as normal.
+#    # Submitted by: ElliotHaughin
+#
+#    ErrorDocument 404 index.php
+#</IfModule>
+
+
+#alaf ka vp ka paste tena
+#RewriteEngine on
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond $1 !^/(index\.php|assets/|humans\.txt)
+#RewriteRule ^(.*)$ index.php/$1 [L]
+
+
+
+#
+## Turn on URL rewriting
+#RewriteEngine On
+#
+## Installation directory
+#RewriteBase /
+#
+## Protect hidden files from being viewed
+#<Files .*>
+#    Order Deny,Allow
+#    Deny From All
+#</Files>
+#
+## Protect application and system files from being viewed
+#RewriteRule ^(?:application|system)\b.* index.php/$0 [L]
+#
+## Allow any files or directories that exist to be displayed directly
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#
+## Rewrite all other URLs to index.php/URL
+#RewriteRule .* index.php/$0 [PT]
+
+
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # !IMPORTANT! Set your RewriteBase here and don't forget trailing and leading
+  #  slashes.
+  # If your page resides at
+  #  http://www.example.com/mypage/test1
+  # then use
+  # RewriteBase /mypage/test1/
+  RewriteBase /ci-raudhwa/#fadsel/yoteyote/
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.php?/$1 [L]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+  # If we don't have mod_rewrite installed, all 404's
+  # can be sent to index.php, and everything works as normal.
+  # Submitted by: ElliotHaughin
+
+  ErrorDocument 404 /index.php
+</IfModule>
+
+#RewriteEngine on
+#RewriteCond $1 !^(index\.php|images|robots\.txt)
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(.*)$ index.php/$1 [L]
+
+
+#GODADDY HOSTING
+#RewriteEngine On
+#RewriteBase /
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*) index.php?/$1
