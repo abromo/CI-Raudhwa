@@ -67,8 +67,10 @@ border-color: #85B200;
 
 }
 .vuta{
-/*margin-top: -274px; */
-top:-274px;
+margin-top: -274px;
+    /*top:274px;*/
+    margin-bottom: 91px;
+    float: left;/*FIREFOX HACK*/
 }
 .content-wrapper{
     
@@ -197,7 +199,8 @@ a,i{
 
 }
 .img-slider{
-    background: url('../img/cami.png');
+    background-color: rgb(215, 207, 178);
+    /*background: url('../img/cami.png');*/
 
     -webkit-background-size: cover;
 
@@ -212,28 +215,41 @@ a,i{
 
 }
 
-#content-title h1,#content-title h5{
+#content-title h1,#content-title h5 {
     font-family: "Open Sans",Arial,sans-serif;
     text-align: right;
 
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    font-family: "Open Sans",Arial,sans-serif;
 }
 
 #content-title h1{
     /* font-weight: 800; */
     font-size: 60px;
-    line-height: 30px;
+    line-height: 49px;
     text-transform: UPPERCASE;
+    text-shadow: 0px -0px 2px #FFFFFF, 0px 0px 2px #DCE0E3, 1px 1px 3px #728907;
+    text-stroke: 8px #000000;
 }
 
 #content-title h5{
-     font-weight: 400;
+    font-weight: 400;
     font-size: 17px;
     line-height: 0px;
     text-transform: CAPITALIZE;
+    margin-top: -2px;
+
 }
 
 #content-title h5 i{
     color: rgb(110, 136, 0);
+}
+
+.rudi{
+    padding: 5px 9px 5px 5px;
+    background-color: rgb(120, 148, 11);
+    margin-right: 4px;
 }
 
 #main-content
@@ -272,11 +288,11 @@ footer {
     /*background-color: #1d1c26;*/
     height: 80px;
 	/*position: absolute;*/
-	width: 100%;
+	/*width: 100%;*/
 	z-index: 100000;
 	
 	color: #7b8184;
-	bottom: 0;
+	/*bottom: 0;*/
 	background: transparent url('../img/footer.png') repeat 0 0;
 	padding: 0 0 0 0;
 	border-top: 2px solid #82AF00;
@@ -342,4 +358,40 @@ footer {
 
 .kidole{
     cursor: pointer;
+}
+
+
+/* STICKY FOOTER */
+
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+/* Wrapper for page content to push down footer */
+#wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -80px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+    height: 80px;
+}
+#footer {
+    background-color: #eee;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
