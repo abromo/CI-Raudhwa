@@ -2,8 +2,12 @@
 <div id="content" class="container content-bug">
     <div class="content-wrapper vuta">
         <div class="row content-title">
-            <div class="pull-left" id="title"><span><?php echo strtoupper($title)?></span> <i class="text-danger fa fa-chevron-right"></i> <strong><span>QISWA CHA NABII</span></strong></div>
-            <div class="pull-right text-right" id="date"><?php echo date('D, M d, Y');?> </div>
+            <div class="pull-left" id="title">
+                <span id="rudi"></span>
+                <span id="post-title"><?php echo strtoupper($title);?></span>
+                <?php /*<i class="text-danger fa fa-chevron-right"></i> <strong><span>QISWA CHA NABII</span></strong>*/?>
+            </div>
+            <div class="pull-right text-right" id="date"></div>
         </div><!-- END OF UPPERPART-->
 		
         <div class="row content-details">
@@ -24,17 +28,18 @@
                                 <div class="article-details">
                                     <article>
                                         <p>
-                                            <?php echo $post['content'];?>
+                                            <?php echo word_limiter($post['content'],50,"...");?>
                                         </p>
 
                                     </article>
                                 </div>
-                                <p class="btn btn-rau pull-left "><i class="fa fa-book"></i> Soma Zaidi</p>
+                                <p data-id="<?php echo $post['post_id'];?>" class="btn btn-rau pull-left soma-zaidi"><i class="fa fa-book"></i> Soma Zaidi</p>
                                 <div class="article-actions pull-right">
-
+                                    <?php /*
                                     <span><i class="fa fa-comment-o"></i><strong>20</strong> Comments</span>
                                     <span><i class="fa fa-share"></i><strong>23</strong> Shares</span>
-                                    <span><i class="fa fa-eye"></i><strong><?php echo $post['views']?></strong> views</span>
+                                    */?>
+                                    <span><i class="fa fa-eye"></i> Imesomwa mara<strong> <?php echo $post['views']?></strong></span>
                                 </div>
                             </div>
                         </article>
@@ -43,7 +48,16 @@
                     <?php } ?>
                 </div>
                 <div class="col-xs-3 random-articles">
-                    <h3>Random Articles</h3>
+                    <h4>Majarida ya wiki</h4>
+                    <article>
+                        <ul class="random-lists">
+                            <?php for($i = 1 ; $i<9 ; $i++) { ?>
+                            <li><i class="fa fa-book"></i> Jarida toleo la <?php echo $i?></li>
+                            <?php } ?>
+                        </ul>
+                    </article>
+
+                    <h4>Popular Articles</h4>
                     <article>
                         <ul class="random-lists">
                             <li><i class="fa fa-chevron-right"></i>Qiswa Chengine</li>
@@ -55,19 +69,7 @@
                         </ul>
                     </article>
 
-                    <h3>Popular Articles</h3>
-                    <article>
-                        <ul class="random-lists">
-                            <li><i class="fa fa-chevron-right"></i>Qiswa Chengine</li>
-                            <li><i class="fa fa-chevron-right"></i>Qiswa Chengine</li>
-                            <li><i class="fa fa-chevron-right"></i>Qiswa Chengine</li>
-                            <li><i class="fa fa-chevron-right"></i>Qiswa Chengine</li>
-                            <li><i class="fa fa-chevron-right"></i>Qiswa Chengine</li>
-                            <li><i class="fa fa-chevron-right"></i>Qiswa Chengine</li>
-                        </ul>
-                    </article>
-
-                    <h3>Matangazo</h3>
+                    <h4>Matangazo</h4>
                     <article>
                         <ul class="random-lists">
                             <li><i class="fa fa-chevron-right"></i>Tangazo lengine</li>
